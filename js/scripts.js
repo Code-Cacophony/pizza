@@ -13,7 +13,7 @@ Pizza.prototype.displayPrice = function () {
   }
 }
 
-Pizza.prototype.displayPrice = function () {
+Pizza.prototype.displayPizza = function () {
   var size = this.size;
   var toppings = this.toppings;
   var price = this.price;
@@ -33,5 +33,10 @@ $(document).ready(function () {
 
 
     console.log(size);
+    console.log(toppings);
+
+    pizza.displayPrice();
+
+    pizza.displayPizza();
   });
 });
