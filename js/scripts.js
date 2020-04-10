@@ -11,13 +11,16 @@ Pizza.prototype.displayPrice = function () {
   } else {
     this.price = 15.00;
   }
+  if (this.toppings == 4) {
+    this.price = this.price * 80.00;
+  }
 }
 
 Pizza.prototype.displayPizza = function () {
   var size = this.size;
   var toppings = this.toppings;
   var price = this.price;
-  $("#results").html("<p> Size:" + size + "Toppings:" + toppings + "Price:" + price + "</p>")
+  $("#results").html("<p> Size:" + size + "<br>" + "Toppings:" + toppings + "<br>" + "Price:" + price + "</p>")
 }
 
 
