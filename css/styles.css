@@ -2,6 +2,10 @@ body {
   background-color: beige;
 }
 
+#man {
+  width: 200px;
+}
+
 #notice {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 50px;
