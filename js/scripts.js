@@ -17,6 +17,7 @@ Pizza.prototype.displayPizza = function () {
   var size = this.size;
   var toppings = this.toppings;
   var price = this.price;
+  $("#results").html("<p> Size:" + size + "Toppings:" + toppings + "Price:" + price + "</p>")
 }
 
 
@@ -26,8 +27,11 @@ $(document).ready(function () {
     event.preventDefault();
 
 
-    var size = parseInt($("#size").val());
-    var toppings = parseInt($("#toppings").val());
+    //var size = parseInt($("#size").val());
+    //var toppings = parseInt($("#toppings").val());
+
+    var size = $("#size").val();
+    var toppings = $("#toppings").val();
 
     var pizza = new Pizza(size, toppings);
 
