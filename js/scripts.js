@@ -6,7 +6,11 @@ function Pizza(size, toppings) {
 }
 
 Pizza.prototype.displayPrice = function () {
-  if this
+  if (this.size === 1) {
+    this.price = 12.00;
+  } else {
+    this.price = 15.00;
+  }
 }
 
 
@@ -19,6 +23,7 @@ $(document).ready(function () {
     var size = parseInt($("#size").val());
     var toppings = parseInt($("#toppings").val());
 
-    var price = new price(size, toppings);
+
+    console.log(price);
   });
 });
