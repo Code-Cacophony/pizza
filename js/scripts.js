@@ -13,6 +13,12 @@ Pizza.prototype.displayPrice = function () {
   }
 }
 
+Pizza.prototype.displayPrice = function () {
+  var size = this.size;
+  var toppings = this.toppings;
+  var price = this.price;
+}
+
 
 
 $(document).ready(function () {
@@ -23,7 +29,9 @@ $(document).ready(function () {
     var size = parseInt($("#size").val());
     var toppings = parseInt($("#toppings").val());
 
+    var pizza = new Pizza(size, toppings);
 
-    console.log(price);
+
+    console.log(size);
   });
 });
