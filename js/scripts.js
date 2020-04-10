@@ -20,7 +20,7 @@ Pizza.prototype.displayPizza = function () {
   var size = this.size;
   var toppings = this.toppings;
   var price = this.price;
-  $("#results").html("<p> Size:" + size + "<br>" + "Toppings:" + toppings + "<br>" + "Price: $" + price + " (plus tax)" + "</p>")
+  $("#results").html("<p> Size:" + size + "<br>" + "<br>" + "Toppings:" + toppings + "<br>" + "<br>" + "Price: $" + price + " (plus tax)" + "</p>")
 }
 
 
